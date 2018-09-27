@@ -1,0 +1,27 @@
+.media {
+  $left-width : 90px;
+  position: relative;
+  padding-left: $left-width;
+  margin-bottom: 25px;
+  overflow: hidden;
+  .media-left {
+    position: absolute;
+    left: 0;
+    width: $left-width;
+    img {
+      max-width: 100%;
+    }
+  }
+  .media-body {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+  .post-text {
+    font-size: 18.1px;
+    margin-bottom: 2px;
+  }
+  .post-time {
+    color: #999999;
+  }
+}

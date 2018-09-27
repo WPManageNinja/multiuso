@@ -1,0 +1,584 @@
+/************************************************
+
+Stylesheet: Global Stylesheet
+
+*************************************************/
+body {
+	background-color: #fff;
+}
+/*links style*/
+a {
+
+}
+//Form Box
+select {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAAAbFBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///90nNm4AAAAInRSTlMACAkKCwwNDhEVFhcYGYSRkri5uru+v8DBwsXGzNHS09TX6FOQeQAAAAFiS0dEIypibDoAAATsSURBVHja7drLUhNBAIZREkAE74AK3oB+/4eUjSukCJKRJt8561T1VH//zCp7ewAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8EKs3u+7hFntv18tfcTh5fj2yk3P6ejbuDxcvP+wgHn7j3FxuHh/C5i4/+0CDhbsfzGGBczdf8kFHPzpbwET9x/jfL14fwuYuP8YZ+vF+1vAxP2XWcD6fAwLeBn9l1jA+mwMC3gp/be/gL/0t4CJ+297AX/tf7uAI7c/af/tLuCe/hYwRf/v98TZ3gLu7W8BE/cf43S9eH8LmLj/thawPh3DAl5i/+0s4IH+FjBx/9sFrBbvbwET93/6AlYP97eAifs/dQEb9beAifuP8Wm1eH8LmLj/kxbwcWzqs3+K/mcHXzaO8+GfD3lzvfEhvgGTvv9jXJ/sWYD+FqC/BehvAfpbgP4WoL8F6G8B+luA/hagvwXobwH6P+jEAtL9LaDe3wLq/S2g3t8C6v0toN7fAur9LaDe3wLq/S2g3t8C6v0toN7fAur9LaDe3wLq/S2g3t8C6v0toN7fAur9LaDe3wLq/S2g3t8Cnrv/1clzP6wFtPtbQL2/BdT7W0C9vwXU+1tAvb8F1PtbQL2/BdT7W0C9vwXU+1tAvb8F1Ps/agHfLWD3+ltAvb8F1PtbQL2/BdT7W0C9vwXU+1tAvf/tAq4soNzfAur9LaDe3wLq/S2g3t8C6v0toN7fAur9LaDe3wLq/S2g3t8C6v0toN7fAur9LaDe3wLq/S2g3t8C6v0toN7fAur9LaDeP7+AfP/4AvRvL0D/9gL0by9A//YC9G8vQP/2AvRvL0D/9gL0by9A//YC9G8vQP/2AvRvL0D/9gL0by9A//YC9G8vQP/2AvRvL0D/9gL0by9A//YC9G8v4BH9f+m/ewt4TP9j7XduAfq3F6B/ewH6txegf3sB+rcXoH97Afq3F6B/ewH6txegf3sB+rcXoH97Afq3F6B/ewH6txegf3sB+rcXoH97Afq3F6D/kgv4Nf0C9F/U8ewL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wt4/UP/8gL0by9A//YC9G8vQP/2AvRvL0D/9gL0by9A//YC9G8vQP/2AvRvL0D/9gL0by9A//YC9G8vQP/2AvRvL0D/HfTuZuOoXy82/unNOze7g98A778F6G8B+luA/hagvwXobwF3/NQ/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/QML+Km/BehvAXf9eO1uygvQv70A/dsL0L+9AP3bC9C/vQD92wvQv70A/dsL0L+9AP3bC9C/7e1bdwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAz+g3OZa6gvLS3R0AAAAASUVORK5CYII=);
+	background-size: 18px;
+}
+/*form style*/
+textarea,input,[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
+	background-color: #f9fbfd;
+}
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+table {
+	margin-bottom: 10px;
+}
+ol,ul,ol ol, ol ul, ul ol, ul ul {
+	margin-bottom: 5px;
+}
+.page-title {
+	
+	// Remove Foundation vcard styling from author page titles
+	.vcard {
+		border: 0px;
+		padding: 0px;
+	}
+}
+
+// Post meta  
+.byline {
+	color: #999;
+	margin-bottom: 10px;
+	a {
+		color: #999;
+	}
+	.byline-item {
+		margin-right: 28px;
+		display: inline-block;
+		margin-bottom: 3px;
+		i {
+			margin-right: 5px;
+		}
+	}
+
+}
+
+// Entry content  
+.entry-content {
+	
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.alignleft, img.alignleft { 
+		margin-right: 1.5em; 
+		display: inline; 
+		float: left; 
+	}
+	.alignright, img.alignright { 
+		margin-left: 1.5em; 
+		display: inline; 
+		float: right; 
+	}
+	.aligncenter, img.aligncenter { 
+		margin-right: auto; 
+		margin-left: auto; 
+		display: block; 
+		clear: both; 
+	}
+			
+	video, object {
+		max-width: 100%;
+		height: auto;
+		}
+
+	pre {
+		background: #eee;
+		border: 1px solid #cecece;
+		padding: 10px;
+		}
+
+} 
+
+.wp-caption {
+	max-width: 100%;
+	background: #f2f4f6;
+	padding: 5px;
+	word-break: break-word;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	// Images inside wp-caption  
+	img {
+		max-width: 100%;
+		margin-bottom: 0;
+		width: 100%;
+	}
+
+	p.wp-caption-text {
+		font-size: 0.85em;
+		margin: 4px 0 7px;
+		text-align: center;
+	}
+} 
+
+// Add Foundation styling to password protect button
+.post-password-form input[type="submit"] {
+	@include button;
+}
+
+/*********************
+//Font style
+*********************/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	color: #222222;
+}
+.fs_italic {
+	font-style: italic;
+}
+/*********************
+IMAGE GALLERY STYLES
+*********************/
+.gallery {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-right: -15px;
+	margin-left: -15px; 
+}
+.gallery::before, .gallery::after {
+	content: ' ';
+	display: table; 
+}
+.gallery::after {
+	clear: both; 
+}
+.gallery.gallery-columns-1 > dl {
+	@include grid-column;
+}
+.gallery.gallery-columns-2 > dl {
+	@include grid-column(1 of 2);
+}
+.gallery.gallery-columns-3 > dl {
+	@include grid-column(1 of 3);
+}
+.gallery.gallery-columns-4 > dl {
+	@include grid-column(1 of 4);
+}
+.gallery.gallery-columns-5 > dl {
+	@include grid-column(1 of 5);
+}
+.gallery.gallery-columns-6 > dl {
+	@include grid-column(1 of 6);
+}
+.gallery.gallery-columns-7 > dl {
+	@include grid-column(1 of 7);
+}
+.gallery.gallery-columns-8 > dl {
+	@include grid-column(1 of 8);
+}
+.gallery dl {
+	width: 100%;
+	float: left;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem; 
+}
+.gallery dl:last-child:not(:first-child) {
+  float: right; 
+ }
+
+// Gallery caption styles
+.gallery-caption {}
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
+
+/*********************
+PAGE NAVI STYLES
+*********************/
+.page-navigation {
+	margin-top: 1rem;
+}
+
+/*********************
+COMMENT STYLES
+*********************/
+#comments {
+	.commentlist {
+		margin-left: 0px;
+		.comment {
+			list-style: none;
+		}
+	}
+}
+
+#respond {
+	ul {
+		margin-left: 0px;
+	}
+}
+.commentlist {
+	>li {
+		position: relative;
+		clear: both;
+		overflow: hidden;
+		list-style-type: none;
+		margin-bottom: 1.5em;
+		padding: 0 10px;
+	}
+}
+.commentlist {
+	li {
+		ul.children {
+			margin: 0;
+
+			li {}
+
+			.comment {}
+			.alt {}
+			.odd {}
+			.even {}
+			.depth-1 {}           // Change number for different depth  
+			.byuser {}
+			.bypostauthor {}
+			.comment-author-admin {}
+
+		}
+	}
+
+	li[class*=depth-] {
+		margin-top: 1.1em;
+	}
+
+	li.depth-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	li:not(.depth-1) {
+		margin-left: 10px;
+		margin-top: 0;
+		padding-bottom: 0;
+	}
+
+	li.depth-2 {}
+	li.depth-3 {
+	}
+	li.depth-4 {}
+	li.depth-5 {}
+
+	// General comment classes  
+	.alt {}
+	.odd {
+	}
+	.even {
+	}
+	.parent {}
+	.comment {}
+	.children {}
+	.pingback {}
+	.bypostauthor {}
+	.comment-author {}
+	.comment-author-admin {}
+	.thread-alt {}
+	.thread-odd {}
+	.thread-even {}
+
+	// vcard  
+	.vcard {
+		margin-left: 50px;
+
+		cite.fn {
+			font-weight: 700;
+			font-style: normal;
+
+			a.url {}
+
+		}
+
+		time {
+			float: right;
+
+			a {
+				color: #999;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+			}
+
+		}
+
+		img.photo {}
+
+		img.avatar {
+			position: absolute;
+			left: 10px;
+			padding: 2px;
+			border: 1px solid #cecece;
+			background: #fff;
+		}
+
+	} // end .commentlist .vcard  
+
+
+	// comment meta  
+	.comment-meta {
+
+		a {}
+
+	}
+
+	.commentmetadata {
+
+		a {}
+
+	}
+
+	// comment content  
+	.comment_content {
+
+		p {
+			margin: 0.7335em 0 1.5em;
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+	} // end .commentlist .comment_content  
+
+	// comment reply link  
+	.comment-reply-link {
+		float: right;
+		margin-right: 15px;
+		&:hover,
+		&:focus {
+		
+		}
+
+	} // end .commentlist .comment-reply-link  
+
+} // end .commentlist  
+
+/*********************
+COMMENT FORM STYLES
+*********************/
+.respond-form {
+	margin: 1.5em 10px;
+	padding-bottom: 2.2em;
+
+	form {
+		margin: 0.75em 0;
+
+		li {
+			list-style-type: none;
+			clear: both;
+			margin-bottom: 0.7335em;
+
+			label,
+			small {
+				display: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url],
+		textarea {
+			padding: 3px 6px;
+			background: #efefef;
+			border: 2px solid #cecece;
+			line-height: 1.5em;
+
+			&:focus {
+				background: #fff;
+			}
+
+			// form validation  
+			&:invalid {
+				outline: none;
+				border-color: #fbc2c4;
+				background-color: #f6e7eb;
+				-webkit-box-shadow: none;
+				   -moz-box-shadow: none;
+				    -ms-box-shadow: none;
+						box-shadow: none;
+			}
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=url] {
+			max-width: 400px;
+			min-width: 250px;
+		}
+
+		textarea {
+			resize: none;
+			width: 97.3%;
+			height: 150px;
+		}
+
+	}
+}
+
+// comment form title  
+#comment-form-title {
+	margin: 0 0 1.1em;
+}
+
+// cancel comment reply link  
+#cancel-comment-reply {
+	a {}
+}
+
+// logged in comments  
+.comments-logged-in-as {}
+
+// allowed tags  
+#allowed_tags {
+	margin: 1.5em 10px 0.7335em 0;
+}
+
+// No comments  
+.nocomments {
+	margin: 0 20px 1.1em;
+}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+.sidebar {
+	li{
+		list-style: none;
+	}
+}
+
+.widget {
+	ul {
+		margin: 0;
+	}
+}
+/*********************
+FOOTER STYLES
+*********************/
+.footer {
+	clear: both;
+	margin-top: 1em;
+}
+	
+/*********************
+VISUAL EDITOR STYLES
+*********************/
+// Makes content look better in visual editor
+body#tinymce {
+   	margin: 20px;
+}
+
+/*********************
+PLUGIN STYLES
+*********************/
+// Makes Gravity Forms play nice with Foundation Form styles
+.gform_body ul {
+    list-style: none outside none;
+    margin: 0;
+}
+
+/*Node Floating*/
+.set-right {
+	float: right;
+}
+
+.list-unstyled {
+	list-style: none;
+	margin-left: 0;
+}
+
+/*table*/
+.form-submit .submit,.more-link {
+	margin-top: 20px;
+	margin-bottom:20px;
+	background-color: $site-button-color;
+	padding:5px 20px;
+	display: inline-block;
+	color: #fff;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	.more-line {
+		transition: all .1s;
+		left: 0;
+		position: relative;
+	}
+	&:hover,&:focus {
+		color: #FFFFFF;
+		opacity: .9;
+		.more-button {
+			.more-line {
+				transition: all .2s;
+				left: 5px;
+			}
+		}
+	}
+}
+
+table {
+	width: 100%;
+	max-width: 100%;
+	border-bottom: 1px solid #e7e7e7;
+	border-left: 1px solid #e7e7e7;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table > caption{
+	color: #666;
+	font-weight: 700;
+	padding-top: 0;
+}
+td#today,
+td#prev,
+td#next{
+	font-weight: 700;
+}
+td#today a,
+tr td#prev a,
+td#next a {
+	color: $site-button-color;
+}
+table th{
+	border-right: 1px solid #e7e7e7;
+	padding: 8px 0;
+	text-align: center;
+}
+table tr,
+table td {
+	border-right: 1px solid #e7e7e7;
+	padding: 8px 0;
+	border-bottom: 1px solid #e7e7e7;
+	border-top: 1px solid #e7e7e7;
+	text-align: center;
+}
+table td#prev{
+	text-align: left;
+	padding-left: 8px;
+}
+table td#next{
+	text-align: right;
+	padding-right: 8px;
+}
+.gallery-caption {
+	background-color: #dbdbdb;
+	padding: 3px 7px;
+}
+.widget {
+	.cat-item,.page_item {
+		.children {
+			li > a {
+				border-bottom: 1px solid #f1f1f1!important;
+			}
+		}
+	}
+}
+.calendar_wrap {
+	caption {
+		margin-bottom: 15px;
+	}
+}
+.wp-video {
+	overflow: hidden;
+}

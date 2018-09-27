@@ -1,0 +1,142 @@
+
+.blog-page-wrap {
+
+  @at-root .cat-carousel {
+    .item {
+      text-align: center;
+      background-color: #fff;
+      height: 180px;
+      box-shadow: 0 0px 3px #d7d7d7ad;
+      border: 1px solid #d7d7d7ad;
+    }
+    .item-content-holder {
+      background-color: $primary-color;
+      background-size:cover;
+      height: 100%;
+      display: table;
+      width: 100%;
+      >a {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 33px;
+      }
+    }
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+
+.toppage-carousel-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-size:cover;
+  background-color: $primary-color;
+  @at-root .toppage-carousel {
+    position: static;
+    text-align: center;
+    width: 443px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    @media (max-width: 695px) {
+      margin-bottom: 65px;
+    }
+    @media (max-width: 695px) {
+      width: 200px;
+      width: calc(100% - 50px);
+    }
+    .owl-stage-outer {
+      position: relative;
+      border: 6px double white;
+      &:before {
+        content: '';
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        top: -5px;
+        bottom: -5px;
+        background-color: transparent;
+        border: 2px solid #fbfbfc;
+      }
+    }
+    .owl-stage {
+      background-color: #fff;
+      padding-top: 35px;
+      padding-bottom: 35px;
+    }
+    .item {
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    }
+    .slider-post {
+      padding: 15px;
+      padding-right: 25px;
+      h1 {
+        font-weight: 700;
+        font-size: 33.3px;
+        line-height: 1.21;
+        @media (max-width: 695px) {
+          font-size: 29px;
+        }
+        a {
+          color: #222;
+        }
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+      margin-top: 0;
+      height: 100%;
+      pointer-events: none;
+      .owl-prev {
+        left: 3%;
+        position: absolute;
+      }
+      .owl-next {
+        right: 3%;
+        position: absolute;
+      }
+      .owl-prev, .owl-next {
+        pointer-events: all;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #ffffff;
+        color: $primary-color;
+        font-size: 33px;
+        margin-top: 0px;
+        border-radius: 0;
+        padding: 5px 18px;
+      }
+
+      @media (max-width: 695px) {
+        top: auto;
+        bottom: -32px;
+        height: 0;
+        .owl-next , .owl-prev {
+          position: static;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+.category_carousel_wrap {
+  margin-top: 45px;
+}
+.owl-nav button.disabled span {
+  color: gray;
+}

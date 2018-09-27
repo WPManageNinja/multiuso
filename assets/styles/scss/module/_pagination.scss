@@ -1,0 +1,9 @@
+/*pagination style*/
+.pagination {
+  font-family: 'Oswald', sans-serif;
+
+  >li,.prev,.next {
+    color: $site-color;
+    font-size: 18px;
+  }
+}

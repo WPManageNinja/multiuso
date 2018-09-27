@@ -1,0 +1,146 @@
+@import "variable";
+/*Site Post style*/
+.blog,.single-post {
+	background: #fff;
+}
+
+.single-title {
+	font-size: 33px;
+	margin-top: 15px;
+	@media (max-width: 639px) {
+		font-size: 29px;
+	}
+}
+.post {
+	margin-bottom: 62px;
+	margin-top: 62px;
+	@media (max-width: 767px) {
+		margin-top: 35px;
+	}
+	.article-header {
+		&.thumb_exist {
+			margin-bottom: 25px;
+		}
+		h2 {
+			font-size: 33px;
+			margin-top:25px;
+			margin-bottom: 5px;
+			@media (max-width: 639px) {
+				font-size: 29px;
+				line-height: 1.2;
+			}
+			a {
+				color: #333333;
+				font-size: inherit;
+			}
+		}
+	}
+	.post-title {
+		font-size: 33px;
+		margin-top:0px;
+		margin-bottom: 5px;
+		line-height: 1.2;
+		a {
+			color: #333333;
+			font-size: inherit;
+		}
+	}
+	.post-excerpt {
+
+	}
+	.article-footer {
+		border-bottom: 1px solid #f1f1f1;
+		padding-bottom: 22px;
+		margin-top: 10px;
+		.taxonomy-links {
+			color: $site-secondary-color;
+			a {
+				
+			}
+		}
+		.icon {
+			margin-right: 7px;
+			color: #fe3b55;
+		}
+		.tags {
+			margin-left: 40px;
+		}
+	}
+	.thumb_notexist {
+		h2,.post-title  {
+			margin-top:0;
+		}
+	}
+	.entry-content {
+		margin-top: 25px;
+		margin-bottom: 15px;
+		.taxonomy-links {
+			float: right;
+			margin-top: 25px;
+			max-width: calc(100% - 180px);
+			margin-left: 5px;
+		}
+	}
+	.post-btn-wrap {
+		margin-top: 10px;
+		overflow: hidden;
+	}
+}
+
+.grid-post-parallel {
+	.post {
+		margin-bottom: 55px;
+		border-bottom: 1px solid #f3f3f3;
+	}
+
+}
+.taxonomy-description {
+	width: 80%;
+	max-width: 451px;
+	color: #fff;
+	margin: auto;
+	text-align: center;
+}
+.sticky,.wp-sticky {
+	position: relative;
+	transition: all .4s ;
+	.article-header.thumb_exist {
+		margin-bottom: 0;
+	}
+	.entry-content {
+		background-color: #fffafa;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 25px;
+		border-left: 1px solid #f3f3f3;
+		border-right: 1px solid #f3f3f3;
+		position: relative;
+		margin-bottom: 0;
+		margin-top: 0;
+		&:before {
+			content: '';
+			position: absolute;
+			left: -11px;
+			top: -20px;
+			background-color: transparent;
+			background-image: url(../images/stiky.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			color: #fff;
+			height: 50px;
+			padding: 1px 0 0 33px;
+			text-align: left;
+			width: 40px;
+			transition: all .4s;
+			z-index: 1;
+		}
+		&.thumb_notexist {
+			&:before {
+				top: 0px;
+			}
+			padding-top: 30px;
+			padding-bottom: 15px;
+		}
+	}
+}
+

@@ -1,0 +1,110 @@
+
+.comments-area {
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  margin-top: 35px;
+  padding: 30px;
+  @include breakpoint(medium-sx down) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  label {
+    font-size: 18px;
+    color: #222222;
+    line-height: 2.5;
+  }
+  .comment-reply-title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .form-submit {
+    overflow: hidden;
+    .submit {
+      float: right;
+      margin: 0;
+      padding: 11px 25px;
+    }
+  }
+  .comments-title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .commentlist {
+    border-bottom: 1px solid #f1f1f1;
+    >li {
+      @include breakpoint(small down) {
+        padding: 0;
+      }
+    }
+  }
+
+
+  .media-object {
+    $media-object-pad: 55px;
+    padding-left: $media-object-pad;
+    position: relative;
+    @include breakpoint(medium-sx down) {
+      padding-left: $media-object-pad - 10;
+    }
+
+    @include breakpoint(small down) {
+      padding-left: 0;
+    }
+    .media-object-section-author {
+      position: absolute;
+      left: 0;
+      width: $media-object-pad;
+      margin-right: 5px;
+      @include breakpoint(medium-sx down) {
+        width: $media-object-pad - 10;
+      }
+      @include breakpoint(small down) {
+        display: none;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 100%;
+      }
+    }
+    .media-object-section-content {
+      margin-left: 15px;
+      @include breakpoint(small down) {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .bypostauthor {
+    padding: 0;
+    >.media-object {
+      background-color: #f2f4f6;
+      border: 10px solid #f2f4f6;
+      padding-top: 10px;
+    }
+  }
+  .comment-respond {
+    padding: 0;
+  }
+}
+
+.commentlist {
+  margin-bottom: 35px;
+}
+.comment-form-comment {
+  margin-bottom: 30px;
+}
+.comment-author {
+  color: #222222;
+  >a:not(.comment-reply-link,.comment-edit-link) {
+    color: #222222;
+  }
+  time {
+    a {
+      color: #999;
+    }
+  }
+}
